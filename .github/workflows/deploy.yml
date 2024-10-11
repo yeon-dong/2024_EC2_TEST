@@ -20,7 +20,7 @@ jobs:
             git config --global --add safe.directory /home/ubuntu/2024_EC2_TEST
             sudo git pull origin master
             cd /home/ubuntu/2024_EC2_TEST/Ex11_Food
-            chmod +x gradlew
+            sudo chmod +x gradlew
             ./gradlew bootwar
             sudo fuser -k -n tcp 8080 
             nohup java -jar build/libs/*SNAPSHOT.war > /dev/null 2>&1 &

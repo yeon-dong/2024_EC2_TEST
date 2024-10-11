@@ -19,7 +19,7 @@ jobs:
             cd /home/ubuntu/2024_EC2_TEST
             git config --global --add safe.directory /home/ubuntu/2024_EC2_TEST
             sudo git pull origin master
-            cd Ex11_Food
+            cd /home/ubuntu/2024_EC2_TEST/Ex11_Food
             sudo ./gradlew bootwar
             sudo fuser -k -n tcp 8080 
             nohup java -jar build/libs/*SNAPSHOT.war > /dev/null 2>&1 &
